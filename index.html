@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univers Studio Ghibli</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #2c3e50;
+            --accent-color: #34495e;
+            --card-bg: #ffffff;
+            --alert-color: #c0392b;
+            --table-header: #bdc3c7;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7ca1b4, #34495e);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .alert-box {
+            background-color: #fdf2f2;
+            border-left: 5px solid var(--alert-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .alert-box h3 {
+            color: var(--alert-color);
+            margin-top: 0;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #7f8c8d;
+            border-left: 3px solid #bdc3c7;
+            padding-left: 1rem;
+            margin: 1rem 0;
+        }
+
+        /* Buscador i Taula */
+        .search-container {
+            margin-bottom: 1rem;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background-color: #eaeded;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            background-color: #e1f5fe;
+            color: #0288d1;
+        }
+
+        .tag.hard {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guia Emocional de Studio Ghibli</h1>
+        <p>Analitzant la màgia, els sentiments i on trobar les seves obres</p>
+    </header>
+
+    <main>
+        <!-- Secció 1: Emocions -->
+        <section>
+            <h2>És normal tenir sentiments amb Ghibli?</h2>
+            <p><strong>I tant que sí!</strong> L'estudi no fa simple animació; dissenya experiències emocionals per connectar amb la teva part més humana a través de tres pilars fonamentals:</p>
+            <ul>
+                <li><strong>El concepte de <em>Ma</em> (el buit):</strong> Moments de silenci i calma on no passa res en la trama, creats expressament perquè l'espectador processi les seves pròpies emocions.</li>
+                <li><strong>La nostàlgia de l'infantesa:</strong> Una habilitat gairebé màgica per fer-te enyorar llocs i moments que potser no has viscut mai.</li>
+                <li><strong>Humanitat en els grisos:</strong> No hi ha personatges absolutament bons o dolents. La complexitat d'actuació apropa les històries a la vida real.</li>
+            </ul>
+            <div class="quote">
+                "La música de Joe Hisaishi és la peça clau: unes poques notes de piano estan dissenyades per obrir les comportes de la sensibilitat."
+            </div>
+        </section>
+
+        <!-- Secció 2: La tomba de les lluernes -->
+        <section>
+            <h2>La Tomba de les Lluernes és per a nens?</h2>
+            <div class="alert-box">
+                <h3>Resposta curta: Absolutament NO.</h3>
+                <p>Tot i ser animació, és considerada una de les obres més devastadores i crues de la història del cinema.</p>
+            </div>
+            <p>La pel·lícula retrata de forma hiperrealista la Segona Guerra Mundial a través dels ulls de dos germans que miren de sobreviure a la fam, els bombardejos i la indiferència social. No conté elements màgics ni un final feliç salvador, motiu pel qual pot resultar altament traumàtica per a un públic infantil.</p>
+        </section>
+
+        <!-- Secció 3: Catàleg de pel·lícules -->
+        <section>
+            <h2>Catàleg Completo de Pel·lícules</h2>
+            <p>Utilitza el cercador per filtrar per títol, director o estil emocional:</p>
+            
+            <div class="search-container">
+                <input type="text" id="studioSearch" onkeyup="filterTable()" placeholder="Cerca pel·lícules per títol, director, to...">
+            </div>
+
+            <div class="table-responsive">
+                <table id="ghibliTable">
+                    <thead>
+                        <tr>
+                            <th>Any</th>
+                            <th>Títol</th>
+                            <th>Director</th>
+                            <th>To emocional</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1986</td><td><strong>El castell al cel</strong></td><td>Hayao Miyazaki</td><td><span class="tag">Aventura</span> Èpica i pura màgia.</td></tr>
+                        <tr><td>1988</td><td><strong>El meu veí Totoro</strong></td><td>Hayao Miyazaki</td><td><span class="tag">Felicitat</span> Infantesa i natura.</td></tr>
+                        <tr><td>1988</td><td><strong>La tomba de les lluernes</strong></td><td>Isao Takahata</td><td><span class="tag hard">Tragèdia extrema</span> Molt dura.</td></tr>
+                        <tr><td>1989</td><td><strong>Kiki, l'aprenent de bruixa</strong></td><td>Hayao Miyazaki</td><td><span class="tag">Calidesa</span> Creixement personal.</td></tr>
+                        <tr><td>1991</td><td><strong>Recordant l'ahir</strong></td><td>Isao Takahata</td><td><span class="tag">Nostàlgia</span> Reflexió adulta.</td></tr>
+                        <tr><td>1992</td><td><strong>Porco Rosso</strong></td><td>Hayao Miyazaki</td><td><span class="tag">Aventura</span> Honor i punt melancòlic.</td></tr>
+                        <tr><td>1993</td><td><strong>Puc escoltar el mar</strong></td><td>Tomomi Mochizuki</td><td><span class="tag">Drama</span> Romàntic juvenil.</td></tr>
+                        <tr><td>1994</td><td><strong>Pompoko</strong></td><td>Isao Takahata</td><td><span class="tag">Divertida</span> Crítica ecològica.</td></tr>
+                        <tr><td>1995</td><td><strong>Murmuris del cor</strong></td><td>Yoshifumi Kondō</td><td><span class="tag">Inspiradora</span> Romàntica.</td></tr>
+                        <tr><td>1997</td><td><strong>La princesa Mononoke</strong></td><td>Hayao Miyazaki</td><td><span class="tag hard">Èpica</span> Violenta i espiritual.</td></tr>
+                        <tr><td>1999</td><td><strong>Els meus veïns els Yamada</strong></td><td>Isao Takahata</td><td><span class="tag">Comèdia</span> Familiar i quotidiana.</td></tr>
+                        <tr><td>2001</td><td><strong>El viatge de Chihiro</strong></td><td>Hayao Miyazaki</td><td><span class="tag">Fantasia</span> Desbordant i maduració.</td></tr>
+                        <tr><td>2002</td><td><strong>Haru al regne dels gats</strong></td><td>Hiroyuki Morita</td><td><span class="tag">Fantasia</span> Lleugera i divertida.</td></tr>
+                        <tr><td>2004</td><td><strong>El castell ambulant</strong></td><td>Hayao Miyazaki</td><td><span class="tag">Amor</span> Guerra i meravella visual.</td></tr>
+                        <tr><td>2006</td><td><strong>Contes de Terramar</strong></td><td>Gorō Miyazaki</td><td><span class="tag">Fantasia fosca</span> Ritme lent.</td></tr>
+                        <tr><td>2008</td><td><strong>Ponyo a l'aqüari</strong></td><td>Hayao Miyazaki</td><td><span class="tag">Adorable</span> Per a totes les edats.</td></tr>
+                        <tr><td>2010</td><td><strong>Arrietty i el món dels nins</strong></td><td>Hiromasa Yonebayashi</td><td><span class="tag">Delicada</span> Visualment preciosa.</td></tr>
+                        <tr><td>2011</td><td><strong>El turó de les roselles</strong></td><td>Gorō Miyazaki</td><td><span class="tag">Nostàlgia</span> Històrica i romàntica.</td></tr>
+                        <tr><td>2013</td><td><strong>El vent s'aixeca</strong></td><td>Hayao Miyazaki</td><td><span class="tag">Biogràfica</span> Trista i poètica.</td></tr>
+                        <tr><td>2013</td><td><strong>La història de la princesa Kaguya</strong></td><td>Isao Takahata</td><td><span class="tag hard">Artística</span> Profunda i trista.</td></tr>
+                        <tr><td>2014</td><td><strong>El record de la Marnie</strong></td><td>Hiromasa Yonebayashi</td><td><span class="tag">Misteri</span> Emocional i amistat.</td></tr>
+                        <tr><td>2020</td><td><strong>Earwig i la bruixa</strong></td><td>Gorō Miyazaki</td><td><span class="tag">Animació 3D</span> Molt diferent.</td></tr>
+                        <tr><td>2023</td><td><strong>El noi i l'ocell</strong></td><td>Hayao Miyazaki</td><td><span class="tag hard">Surrealista</span> Abstracta i personal.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Secció 4: On veure-les (Sense Netflix) -->
+        <section>
+            <h2>On veure-les? ( alternatives a Netflix )</h2>
+            <ul>
+                <li><strong>Lloguer i Compra Digital:</strong> Disponibles a plataformes de videoclub com <strong>Apple TV (iTunes)</strong>, <strong>Rakuten TV</strong> o per compra directa a <strong>Amazon Prime Video</strong>.</li>
+                <li><strong>Pantalla Gran (Cinemes):</strong> Estigues atent/a als cinemes locals i passis especials (com el Phenomena a Barcelona). Distribuidors com Vértigo Films fan reestrenes periòdiques dels clàssics de l'estudi.</li>
+                <li><strong>Format Físic (DVD/Blu-ray):</strong> Ideal per a col·leccionistes. Les trobaràs a botigues com FNAC o El Corte Inglés.</li>
+                <li><strong>Biblioteques Públiques:</strong> El truc gratuït! La xarxa de biblioteques de Catalunya sol tenir el catàleg complet de Ghibli disponible en préstec.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Generat a partir de la conversa del xat — Studio Ghibli Fanpage</p>
+    </footer>
+
+    <script>
+        function filterTable() {
+            var input, filter, table, tr, td, i, j, txtValue, match;
+            input = document.getElementById("studioSearch");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("ghibliTable");
+            tr = table.getElementsByTagName("tr");
+
+            for (i = 1; i < tr.length; i++) {
+                tr[i].style.display = "none";
+                td = tr[i].getElementsByTagName("td");
+                for (j = 0; j < td.length; j++) {
+                    if (td[j]) {
+                        txtValue = td[j].textContent || td[j].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
