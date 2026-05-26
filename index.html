@@ -180,64 +180,6 @@
             background-color: #e8eceb;
             margin-top: 4rem;
         }
-
-        /* Estils per a la secció de vídeos */
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        
-        .video-card {
-            background: #fdfdfd;
-            border: 1px solid #e8eceb;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        /* Efecte en passar el ratolí per sobre de la targeta */
-        .video-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-        }
-        
-        /* Contenidor adaptatiu per mantenir la proporció 16:9 del vídeo */
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* Proporció 16:9 */
-            height: 0;
-            overflow: hidden;
-            background-color: #000;
-        }
-        
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-        
-        .video-info {
-            padding: 1rem;
-        }
-        
-        .video-info h3 {
-            margin: 0 0 0.5rem 0;
-            font-size: 1.1rem;
-            color: var(--accent-color);
-        }
-        
-        .video-info p {
-            margin: 0;
-            font-size: 0.9rem;
-            color: #555;
-            line-height: 1.4;
-        }
     </style>
 </head>
 <body>
@@ -270,59 +212,7 @@
                 </div>
             </div>
         </section>
-        
-        <section>
-            <h2>Moments i Tràilers Icònics</h2>
-            <p>Submergeix-te en l'atmosfera visual de l'estudi amb aquesta selecció de vídeos i tràilers oficials:</p>
-            
-            <div class="video-grid">
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <iframe 
-                            src="https://youtu.be/5Fgq4Osh6XQ?si=9SgBYlV9Rxm-ACL9" 
-                            title="Tràiller d'El viatge de Chihiro" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                         iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>El viatge de Chihiro (Tràiler)</h3>
-                        <p>Descobreix el món esperitual i la història de maduració més guardonada de Hayao Miyazaki.</p>
-                    </div>
-                </div>
-        
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <iframe 
-                            src="https://youtu.be/cY-xPCAuLkY?si=G_7heLCrEobOZvK0" 
-                            title="Tràiler d'El meu veí Totoro" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>El meu veí Totoro</h3>
-                        <p>Un cant a la infantesa, la connexió amb la natura i la innocència que ens connecta a tots.</p>
-                    </div>
-                </div>
-        
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <iframe 
-                            src="https://youtu.be/TioZt2aBZVE?si=-HKM5ypOCw8GPVKy" 
-                            title="TràilerEL CASTILLO AMBULANTE - Tráiler Original Subtitulado | HD" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>El castell ambulant</h3>
-                        <p>La màgia de la imaginació visual de Ghibli en una història sobre l'amor, la vellesa i la pau.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
+                
         <section>
             <h2>La Tomba de les Lluernes és per a nens?</h2>
             <div class="alert-box">
